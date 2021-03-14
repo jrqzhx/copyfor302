@@ -20,7 +20,7 @@ jobs:
     steps:
       - name: Checkout
         run: |
-          git clone https://github.com/jrqzhx/copyfor302.git ~/copyfor302
+          git clone https://github.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE.git ~/gitee_q8qsTAUA_cThxc1RBVUE
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
@@ -28,13 +28,12 @@ jobs:
       - name: npm install
         if: env.XL_URL
         run: |
-          cd ~/copyfor302
-          git checkout ZIYE
+          cd ~/JavaScript
           npm install
       - name: '运行 【小乐】'
         if: env.XL_URL
         run: |
-          cd ~/copyfor302
+          cd ~/gitee_q8qsTAUA_cThxc1RBVUE
           node Task/xiaole.js
         env:
           
