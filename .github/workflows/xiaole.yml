@@ -20,15 +20,15 @@ jobs:
     steps:
       - name: Checkout
         run: |
-          git clone https://github.com/jrqzhx/copyfor302.git ~/copyfor302
-      - name: Use Node.js 12.x
+          git clone https://github.com/jrqzhx/copyfor302.git ~/js
+      - name: Use Node.js 14.x
         uses: actions/setup-node@v1
         with:
-          node-version: 12.x
+          node-version: 14.x
       - name: npm install
         if: env.XL_URL
         run: |
-          cd ~/copyfor302
+          cd ~/js
           git checkout ZIYE
           npm install
       - name: '运行 【小乐】'
