@@ -12,8 +12,7 @@ jobs:
     if: github.event.repository.owner.id == github.event.sender.id
     env:
         XP_refreshTOKEN: ${{ secrets.XP_refreshTOKEN }}      		
-        XP_iboxpayvideoHEADER: ${{ secrets.XP_iboxpayvideoHEADER }}
-        XP_iboxpayvideobody: ${{ secrets.XP_iboxpayvideobody }}
+    
     steps:
       - name: Checkout
         run: |
