@@ -40,25 +40,25 @@ let hlsign = '',hluid = ''
    
   } else {
  if ($.isNode()) {
-  #COOKIES_SPLIT = process.env.COOKIES_SPLIT || "\n";
+  COOKIES_SPLIT = process.env.COOKIES_SPLIT || "\n";
   console.log(
     `============ cookies分隔符为：${JSON.stringify(
-      #COOKIES_SPLIT
+      COOKIES_SPLIT
     )} =============\n`
   );
 if (
-    #process.env.HLDSPURL &&
-    #process.env.HLDSPURL.indexOf(COOKIES_SPLIT) > -1
+    process.env.HLDSPURL &&
+    process.env.HLDSPURL.indexOf(COOKIES_SPLIT) > -1
   ) {
-    #hldspurl = process.env.HLDSPURL.split(COOKIES_SPLIT);
+    hldspurl = process.env.HLDSPURL.split(COOKIES_SPLIT);
   } else {
     hldspurl = process.env.HLDSPURL.split();
   }
   if (
     process.env.HLDSPHD &&
-   # process.env.HLDSPHD.indexOf(COOKIES_SPLIT) > -1
+    process.env.HLDSPHD.indexOf(COOKIES_SPLIT) > -1
   ) {
-    #hldsphd = process.env.HLDSPHD.split(COOKIES_SPLIT);
+    hldsphd = process.env.HLDSPHD.split(COOKIES_SPLIT);
   } else {
     hldsphd = process.env.HLDSPHD.split();
   }
