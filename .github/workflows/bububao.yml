@@ -33,7 +33,7 @@ jobs:
       - name: npm install
         run: |
           cd ~/copyfor302
-          git checkout ZIYE
+          git checkout ZIYE2
           npm install
       - name: '运行 【步步宝】'
         run: |
