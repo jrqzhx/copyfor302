@@ -27,7 +27,7 @@ jobs:
         if: env.XP_refreshTOKEN
         run: |
           cd ~/copyfor302
-          git checkout ZIYE
+          git checkout ZIYE2
           npm install
       - name: '运行 【笑谱】'
         if: env.XP_refreshTOKEN
