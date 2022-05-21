@@ -534,7 +534,7 @@ let ua=fqxsua
 
 //判断是否满足运行
 async function adtime(){
-        if (new Date().getMinutes()==30 && new Date().getHours()<=23 && new Date().getHours()>=8){
+        if (new Date().getMinutes()==05,35 && new Date().getHours()<=23 && new Date().getHours()>=8){
             console.log('视频任务: 满足运行时间,当前'+ new Date().toLocaleTimeString())
             ad(adtime)
         } else{
