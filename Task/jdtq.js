@@ -3592,10 +3592,10 @@ function task() {
                             $.qp = JSON.parse(data);
                             if ($.qp.data.code == 0) {
 
-                                $.qpinfo1 = $.qp.data.data.data.find(item => item.appmissionid == 200000407);
-                                $.qpinfo2 = $.qp.data.data.data.find(item => item.appmissionid == 200000408);
-                                $.qpinfo3 = $.qp.data.data.data.find(item => item.appmissionid == 200000409);
-                                $.qpinfo4 = $.qp.data.data.data.find(item => item.appmissionid == 200000410);
+                                $.qpinfo1 = $.qp.data.data.data.find(item => item.appmissionid == 200001252);
+                                $.qpinfo2 = $.qp.data.data.data.find(item => item.appmissionid == 200001253);
+                                $.qpinfo3 = $.qp.data.data.data.find(item => item.appmissionid == 200001254);
+                                $.qpinfo4 = $.qp.data.data.data.find(item => item.appmissionid == 200001255);
 
 
                                 console.log(`${$.qpinfo1.missionname}冷却还需${$.qpinfo1.resttime/1000}秒，已领取${$.qpinfo1.finishtimes}次\n${$.qpinfo2.missionname}冷却还需${$.qpinfo2.resttime/1000}秒，已领取${$.qpinfo2.finishtimes}次\n${$.qpinfo3.missionname}冷却还需${$.qpinfo3.resttime/1000}秒，已领取${$.qpinfo3.finishtimes}次\n${$.qpinfo4.missionname}冷却还需${$.qpinfo4.resttime/1000}秒，已领取${$.qpinfo4.finishtimes}次\n`)
