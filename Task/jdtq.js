@@ -3778,15 +3778,6 @@ function task() {
                             }
                         }
 
-                        if (K == `视频完成翻倍🚩`) {
-                            if (logs) $.log(`${O}, ${K}: ${decodeUnicode(data)}`);
-                            $.spwcfb = JSON.parse(data);
-                            if ($.spwcfb.data.code == 0) {
-                                console.log(`视频完成翻倍：领取${$.spwcfb.data.data.data.rewardnum}金币\n`)
-                                $.message += `【视频完成翻倍】：领取${$.spwcfb.data.data.data.rewardnum}金币\n`;
-                            }
-                        }
-
                         if (K == `签到🚩`) {
                             if (logs) $.log(`${O}, ${K}: ${decodeUnicode(data)}`);
                             $.qd = JSON.parse(data);
